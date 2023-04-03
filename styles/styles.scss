@@ -1,0 +1,12 @@
+$coloresPrimarios:red;
+$coloresSecundarios: blue;
+
+body{
+    background-color: black;
+}
+h1 {
+    background-color: $coloresPrimarios;
+}
+p{
+    background-color: $coloresSecundarios;
+}
