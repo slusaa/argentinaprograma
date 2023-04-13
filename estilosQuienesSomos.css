@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    font-size: 1.5em;
+    padding: 0 25px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #84543C; 
+    font-family: Gidugu;
+}
+button:hover{
+    background-color: #EBA36D;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    /* background-color: #7a300b; */
+    background-color: #84543C;
+    opacity: 80%;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #EDA46C;
+}
+
+.logo{
+    background-image: url(img/LOGOS/logo\ blanco.png);
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 100px;
+}
+
+#homeQuienesSomos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    font-family: Mulish;
+}
+
+.btnInicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedorImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgQuienesSomos{
+    background-image: url(img/QUIENES\ SOMOS.png);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 250px;
+}
+
+@media(min-width:720px){
+
+    h1{
+        font-size: 42px;
+        font-family: Mulish, Bold;
+    }
+    p{
+        font-size: 20px;
+        font-family: Mulish, Bold;
+    }
+    .logo{
+        background-image: url(img/LOGOS/logo\ negro.png);
+        background-size: cover;
+        background-position: center center;
+        height: 50px;
+        width: 100px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        font-family: Gidugu;
+        font-size: 24px;
+    }
+    header nav:hover{
+        color: #EDA46C;
+    }
+    .iconos{
+        display: flex;
+        align-items: flex-end;
+    }
+    #espacio{
+        padding: 3.3%;
+    }
+    #homeQuienesSomos{
+        padding: 0;
+    }
+    #homeQuienesSomos .container{
+        display: flex;
+    }
+    .texto{
+        width: 60%;
+        padding: 2% 12%;
+        text-align: left;
+        justify-content: space-around;
+    }
+    .contenedorImg{
+        width: 40%;
+        padding-right: 0;
+        padding-left: 7.6%;
+    }
+    .imgQuienesSomos{
+        height: 450px;
+        width: 100%;
+    }
+}

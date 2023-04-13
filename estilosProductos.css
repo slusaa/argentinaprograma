@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+button{
+    font-size: 1.5em;
+    padding: 0 25px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #84543C; 
+    font-family: Gidugu;
+}
+button:hover{
+    background-color: #EBA36D;
+}
+header{
+    /* background-color: #7a300b; */
+    background-color: #EDA46C;
+    opacity: 80%;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #EDA46C;
+}
+.logo{
+    background-image: url(img/LOGOS/logo\ blanco.png);
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 100px;
+}
+.nombre{
+    font-size: 18px;
+    font-family: Mulish;
+}
+
+.containerAbuelo{
+    overflow: auto;
+    justify-content: column;
+    padding: 22px;
+    text-align: center;
+}
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#home{
+    display: flex;
+    justify-content: column;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+.containerHijo{
+    text-align: center;
+    align-items: center;
+}
+.imgBicicletaUno{
+    background-image: url(img/CATALOGO/_MG_9325.JPG);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+}
+.imgBicicletaDos{
+    background-image: url(img/CATALOGO/_MG_9346.JPG);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+}
+.imgBicicletaTres{
+    background-image: url(img/CATALOGO/_MG_9334.JPG);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+}
+.imgBicicletaCuatro{
+    background-image: url(img/CATALOGO/_MG_9362.JPG);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+}
+.imgBicicletaCinco{
+    background-image: url(img/CATALOGO/_MG_9396.JPG);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+}
+.imgBicicletaSeis{
+    background-image: url(img/CATALOGO/_MG_9378.JPG);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+}
+/* .imagen{
+    background-image: url(img/LOGOS/logo\ negro.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100px;
+    width: 200px;
+} */
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:410px){
+    .logo{
+        background-image: url(img/LOGOS/logo\ negro.png);
+        background-size: cover;
+        background-position: center center;
+        height: 50px;
+        width: 100px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        font-family: Gidugu;
+        font-size: 24px;
+    }
+    header nav:hover{
+        color: #EDA46C;
+    }
+    #home{
+        height: 150vh;
+        padding-top: 9%;
+        
+    }
+    .nombre{
+        font-size: 16px;
+    }
+    
+}
+

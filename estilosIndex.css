@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+ul{ list-style: none;}
+button{
+    font-size: 1.5em;
+    padding: 0 25px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #84543C; 
+    font-family: Gidugu;
+}
+.btnConocenos{
+    opacity: 80%;
+}
+.btnContactanos{
+    padding: 0 15px;
+    background-color: transparent;
+    color: #84543C;
+    border: 3px solid #84543C;
+}
+.btnVerProd{
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 0 15px;
+}
+button:hover{
+    background-color: #EBA36D;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    /* background-color: #7a300b; */
+    background-color: #84543C;
+    opacity: 80%;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #EDA46C;
+}
+#homeUno{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-left: 50%;
+    font-family: Mulish;
+    flex-direction: column;
+    height: 85vh;
+    color: #000000;
+    background-image:url(img/INVERTIDA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    float: right;
+}
+.logoHomeUno{
+    background-image: url(img/LOGOS/logo_blanco_pequeño.png);
+    background-repeat: no-repeat;
+}
+
+#homeDos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: #FBEADD;
+    padding: 0 10px;
+}
+#explora{
+    font-family: Mulish;
+    font-size: 70px;
+    font-weight: bold;
+    color: #84543C;
+    margin-top: 2px;
+    margin-bottom: -5px;
+    padding: 0;
+}
+#caminos{
+    font-family: Mulish;
+    font-size: 30px;
+    font-weight: bold;
+    color: #84543C;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#empresa{
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #84543C;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#subir{
+    font-family: Mulish;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: right;
+    color: #EBA36D;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.btnCC{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+/* #homeTres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url(img/HOME3_A.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+#homeCuatro{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #84543C;
+    text-align: center;
+}
+footer{
+    background-color: #EBA36D; 
+    font-family: Gidugu;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 17%;
+
+}
+
+footer .container{
+    display: flex;
+    padding: 0 20px;
+    
+}
+footer nav a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color: #84543C;
+}
+
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        font-family: Gidugu;
+        font-size: 24px;
+    }
+    header nav:hover{
+        color: #EDA46C;
+    }
+    #homeUno{
+        height: 150vh;
+        display: flex;
+    }
+    #homeUno .logoHomeUno{
+       
+    }
+    /* .imgLogoPrincipal{
+        background-image: url(img/LOGOS/logo\ blanco.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 400px;
+    } */
+    #homeDos{
+        padding: 0;
+    }
+    #homeDos .container{
+        display: flex;
+        padding: 40px 0px;
+        justify-content: space-around;
+    }
+    #homeDos .textoHomeDos{
+        width: 40%;
+        
+    }
+    #explora{
+        font-size: 96px;
+    }
+    #caminos{
+        font-size: 40px;
+    }
+    #empresa{
+        font-size: 24px;
+    }
+    #subir{
+        font-size: 36px;
+    }
+    
+    #homeDos .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ) ,url(img/HOME2_A.png);
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 600px;
+        padding-right: 0px;
+    }
+    #homeDos .imgHomeDos{
+        padding: 0;
+        width: 40%;
+    }
+    #homeTres{
+       display: flex;
+        
+    }
+    #homeTres p{
+        margin: 0;
+        padding: 0;
+    }
+    .imgHomeTres{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ), url(img/HOME3_A.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 1400px;
+        
+    }
+
+    footer{
+        
+    }
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        background-color: #EDA46C;
+        
+    }
+    footer .navFooter{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+
+    }
+    footer .imgFoot{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    footer .imgFooter{
+        background-image: url(img/LOGOS/VAUBAN\ CHAPITA.png);
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 200px;
+    }
+}
