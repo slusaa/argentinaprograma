@@ -61,6 +61,7 @@ header a:hover{
 }
 
 .containerAbuelo{
+    overflow: auto;
     justify-content: column;
     padding: 22px;
     text-align: center;
@@ -73,6 +74,8 @@ header a:hover{
 #home{
     display: flex;
     justify-content: column;
+    padding-top: 5%;
+    padding-left: 3%;
 }
 .containerHijo{
     text-align: center;
@@ -161,6 +164,7 @@ header a:hover{
     }
     #home{
         height: 150vh;
+        padding-top: 9%;
         
     }
     .nombre{
