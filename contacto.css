@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #84543C; 
+    font-family: Gidugu;
+}
+header{
+    /* background-color: #7a300b; */
+    background-color: #84543C;
+    opacity: 80%;
+}
+
+span{
+    font-size: 18px;
+    color: rgb(255, 41, 41);
+    font-weight: 1000;
+    margin-left: 10px;
+   
+}
+
+button:hover{
+    background-color: #EBA36D;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #EDA46C;
+}
+.logo{
+    background-image: url(img/LOGOS/logo\ blanco.png);
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 100px;
+}
+
+#home{ 
+    /* text-align: center; */
+    padding-top: 40px;
+    height: 85vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),url(img/CONTACTO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.titulo{
+    font-size: 35px;
+    text-align: center;
+    font-family: Mulish;
+    color: #EDA46C;
+    margin: 0;
+    padding: 10px;
+    padding-top: 3%;
+}
+.formulario{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 340px;
+    height: 300px;
+    background: white;
+    color: black;
+    opacity: 50%;
+    padding: 15px;
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Noto Serif Display', serif;
+    
+}
+.controls{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: black;
+    border-bottom: 2px solid black;
+}
+.seleccionador{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.caja{
+    width: 100%;
+    height: 72%;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.btnEnviar{
+    text-align: center;
+    align-items: right;
+    font-size: 5px;;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #84543C; 
+    font-family: Gidugu;
+}
+.btnInicio{
+    padding: 1%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width:720px){
+    .logo{
+        background-image: url(img/LOGOS/logo\ negro.png);
+        background-size: cover;
+        background-position: center center;
+        height: 50px;
+        width: 100px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        font-family: Gidugu;
+        font-size: 24px;
+    }
+    header nav:hover{
+        color: #EDA46C;
+    }
+    #espacio{
+        padding: 3%;
+    }
+    #home{
+        padding: 0;
+        height: 90vh;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .divUno{
+        width: 45%;
+        align-content: center;
+    }
+    .divDos{
+        width: 45%;
+        padding-bottom: 5%;
+    }
+    .formulario{
+        width: 750px;
+        height: 290px;
+        display: flex;
+        justify-content:space-around;
+    }
+    button{
+        font-size: 30px;
+    }
+    
+}
