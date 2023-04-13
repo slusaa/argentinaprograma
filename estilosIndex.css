@@ -69,7 +69,6 @@ header a:hover{
     align-items: centert;
     justify-content: flex-end;
     text-align: center;
-    float: right;
     font-family: Mulish;
     flex-direction: column;
     height: 85vh;
@@ -78,10 +77,13 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.container{
+    width: 100%;
+    float: right;
+}
 .logoHomeUno{
     background-image: url(img/LOGOS/logo_blanco_pequeño.png);
     background-repeat: no-repeat;
-
 }
 
 #homeDos{
