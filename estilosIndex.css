@@ -66,9 +66,10 @@ header a:hover{
 }
 #homeUno{
     display: flex;
-    align-items: right;
+    align-items: centert;
     justify-content: flex-end;
-    text-align: right;
+    text-align: center;
+    float: right;
     font-family: Mulish;
     flex-direction: column;
     height: 85vh;
