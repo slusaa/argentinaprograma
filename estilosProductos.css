@@ -59,9 +59,11 @@ header a:hover{
     font-size: 18px;
     font-family: Mulish;
 }
+
 .containerAbuelo{
     justify-content: column;
     padding: 22px;
+    text-align: center;
 }
 .iconos{
     display: flex;
@@ -73,7 +75,8 @@ header a:hover{
     justify-content: column;
 }
 .containerHijo{
-    
+    text-align: center;
+    align-items: center;
 }
 .imgBicicletaUno{
     background-image: url(img/CATALOGO/_MG_9325.JPG);

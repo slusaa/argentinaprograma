@@ -66,13 +66,14 @@ header a:hover{
 }
 #homeUno{
     display: flex;
-    align-items: centert;
+    align-items: center;
     justify-content: flex-end;
     text-align: center;
+    padding-left: 50%;
     font-family: Mulish;
     flex-direction: column;
     height: 85vh;
-    color: white;
+    color: #000000;
     background-image:url(img/INVERTIDA.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,16 +151,20 @@ header a:hover{
     align-items: center;
     padding: 40px 0;
     background-color: #84543C;
+    text-align: center;
 }
 footer{
     background-color: #EBA36D; 
     font-family: Gidugu;
     color: black;
+    padding-top: 5%;
+    padding-bottom: 17%;
+
 }
 
 footer .container{
     display: flex;
-    padding: 0 5px;
+    padding: 0 20px;
     
 }
 footer nav a{
