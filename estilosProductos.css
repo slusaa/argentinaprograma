@@ -1,138 +1,190 @@
-*{
-    box-sizing: border-box;
-}
-
 body{
-    margin: 0;
-}
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-button{
-    font-size: 1.5em;
-    padding: 0 25px;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    background-color: #84543C; 
-    font-family: Gidugu;
-}
-button:hover{
-    background-color: #EBA36D;
+    font-family: system-ui;
 }
 header{
-    /* background-color: #7a300b; */
-    background-color: #EDA46C;
+    background-color:#EDA46C;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-shadow: 0 7px 8px -3px grey;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 99;
     opacity: 80%;
 }
-header .container{
+.container{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.header-section{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
     align-items: center;
+    position: relative;
 }
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+.header-section div{
+    position: relative;
 }
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover{
-    color: #EDA46C;
-}
-.logo{
-    background-image: url(img/LOGOS/logo\ blanco.png);
-    background-size: cover;
-    background-position: center center;
-    height: 50px;
-    width: 100px;
-}
-.nombre{
-    font-size: 18px;
-    font-family: Mulish;
+.header-section p{
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: #8a8989;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: rgb(250, 242, 242);
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
 }
 
-.containerAbuelo{
-    overflow: auto;
-    justify-content: column;
-    padding: 22px;
-    text-align: center;
-}
 .iconos{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#home{
+
+.logo{
+    width: 164px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.cart{
+    width: 39px;
+    height: 38px;
+}
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+
+    min-width: 290px;
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+/*end header*/
+.products{
+    padding-top: 170px;
     display: flex;
-    justify-content: column;
-    padding-top: 5%;
-    padding-left: 3%;
-}
-.containerHijo{
-    text-align: center;
-    align-items: center;
-}
-.imgBicicletaUno{
-    background-image: url(img/CATALOGO/_MG_9325.JPG);
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 350px;
-}
-.imgBicicletaDos{
-    background-image: url(img/CATALOGO/_MG_9346.JPG);
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 350px;
-}
-.imgBicicletaTres{
-    background-image: url(img/CATALOGO/_MG_9334.JPG);
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 350px;
-}
-.imgBicicletaCuatro{
-    background-image: url(img/CATALOGO/_MG_9362.JPG);
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 350px;
-}
-.imgBicicletaCinco{
-    background-image: url(img/CATALOGO/_MG_9396.JPG);
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 350px;
-}
-.imgBicicletaSeis{
-    background-image: url(img/CATALOGO/_MG_9378.JPG);
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 350px;
-}
-/* .imagen{
-    background-image: url(img/LOGOS/logo\ negro.png);
-    background-size: cover;
-    background-position: center center;
-    height: 100px;
-    width: 200px;
-} */
-.btn{
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
+}
+
+.carts{
+    max-width: 250px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+}
+.carts img{
+    width: 100%;
+}
+.carts p{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+}
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(0, 235, 129);
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: #EDA46C;
+    padding: 9px 23px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carts a:hover{
+    background: #fff;
+    color: red;
+    border: solid 2px red;
+    transition-duration: .3s;
+}
+
+/*float cart*/
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+/*stye to btn close*/
+p.close-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+}
+p.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
 }
 
 @media(min-width:410px){
