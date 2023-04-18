@@ -1,16 +1,29 @@
 body{
     font-family: system-ui;
+    background-color: whitesmoke;
 }
 header{
-    background-color:#EDA46C;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    background-color:hsla(21, 42%, 54%, 0.897);
     box-shadow: 0 7px 8px -3px grey;
     position: fixed;
     width: 100%;
     margin-top: -10px;
     z-index: 99;
     opacity: 80%;
+
+}
+div a:hover{
+    color:hsla(19, 88%, 77%, 0.952);
+    transition-duration: .3s;
+}
+
+div a {
+    font-size: 18px;
+    text-decoration:none;
+    margin: 10px 10px;
+    font-weight:bold;
+    color: #1b0f0fe7;
+    
 }
 .container{
     max-width: 1200px;
@@ -44,6 +57,8 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 10px;
+    flex-wrap: nowrap;
 }
 
 .logo{
@@ -74,7 +89,7 @@ header{
 }
 /*end header*/
 .products{
-    padding-top: 170px;
+    padding-top: 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -83,7 +98,7 @@ header{
 
 .carts{
     max-width: 250px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 3px 0px rgb(0 0 0 / 20%);
     padding-bottom: 34px;
     margin-bottom: 40px;
 }
@@ -187,24 +202,37 @@ p.author a {
     color: #000;
 }
 
-@media(min-width:410px){
+
+@media(max-width:750px){
     .logo{
         background-image: url(img/LOGOS/logo\ negro.png);
         background-size: cover;
         background-position: center center;
         height: 50px;
         width: 100px;
-    }
+     }
+
+     .products {
+        margin-bottom: 300px;
+        align-items: center;
+     }
     header{
-        position: fixed;
+        position: relative;
         width: 100%;
-    }
+
+   }
+
     header .container{
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 0 25px;
+        display: flex;
+        flex-wrap: nowrap;
+
     }
+
+
     header nav{
         flex-direction: row;
         padding-bottom: 0;
@@ -215,7 +243,7 @@ p.author a {
         color: #EDA46C;
     }
     #home{
-        height: 150vh;
+        height: 200vh;
         padding-top: 9%;
         
     }
@@ -233,4 +261,3 @@ p.author a {
     }
     
 }
-
