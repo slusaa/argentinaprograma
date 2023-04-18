@@ -250,5 +250,14 @@ p.author a {
     .nombre{
         font-size: 16px;
     }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+    }
     
 }
