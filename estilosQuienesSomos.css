@@ -1,9 +1,7 @@
 *{
     box-sizing: border-box;
-}
-
-body{
     margin: 0;
+    padding: 0;
 }
 
 button{
@@ -18,20 +16,20 @@ button{
 button:hover{
     background-color: #EBA36D;
 }
-.container{
-    max-width: 1400px;
+header.container{
+    max-width: 8750%;
     margin: auto;
 }
 
 header{
-    /* background-color: #7a300b; */
-    background-color: #84543C;
+    background-color: #7e3f20;
     opacity: 80%;
 }
-header .container{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #7e3f20;
 }
 header nav{
     display: flex;
@@ -59,7 +57,7 @@ header a:hover{
     width: 100px;
 }
 
-#homeQuienesSomos {
+.homeQuienesSomos {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -86,31 +84,24 @@ header a:hover{
 }
 
 @media(min-width:720px){
-
-    h1{
-        font-size: 42px;
-        font-family: Mulish, Bold;
-    }
-    p{
-        font-size: 20px;
-        font-family: Mulish, Bold;
-    }
     .logo{
         background-image: url(img/LOGOS/logo\ negro.png);
         background-size: cover;
         background-position: center center;
-        height: 50px;
+        height: 40px;
         width: 100px;
     }
     header{
         position: fixed;
         width: 100%;
+        background-color: #84543C;
+        
     }
     header .container{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 25px;
+        padding: 10px;
     }
     header nav{
         flex-direction: row;
@@ -121,32 +112,36 @@ header a:hover{
     header nav:hover{
         color: #EDA46C;
     }
+    h1{
+        font-size: 250%;
+        font-family: Mulish, Bold;
+    }
+    p{
+        font-size: 130%;
+        font-family: Mulish, Bold;
+    }
     .iconos{
         display: flex;
         align-items: flex-end;
     }
-    #espacio{
-        padding: 3.3%;
-    }
-    #homeQuienesSomos{
-        padding: 0;
-    }
-    #homeQuienesSomos .container{
+    
+    .homeQuienesSomos{
         display: flex;
+        padding-top: 5%;
+    }
+    .containerDos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2%;
     }
     .texto{
-        width: 60%;
-        padding: 2% 12%;
+        width: 45%;
+        padding: 2% 8%;
         text-align: left;
         justify-content: space-around;
     }
     .contenedorImg{
-        width: 40%;
-        padding-right: 0;
-        padding-left: 7.6%;
-    }
-    .imgQuienesSomos{
-        height: 450px;
-        width: 100%;
+        width: 55%;
     }
 }

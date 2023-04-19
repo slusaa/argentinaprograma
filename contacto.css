@@ -3,7 +3,13 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-image: url(img/CONTACTO.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 button{
     font-size: 30px;
     text-decoration: none;
@@ -13,11 +19,6 @@ button{
     color: white;
     background-color: #84543C; 
     font-family: Gidugu;
-}
-header{
-    /* background-color: #7a300b; */
-    background-color: #84543C;
-    opacity: 80%;
 }
 
 span{
@@ -31,20 +32,23 @@ span{
 button:hover{
     background-color: #EBA36D;
 }
-.container{
-    max-width: 1400px;
-    margin: auto;
+
+header{
+    background-color: #7e3f20;
+    /* background-color: #84543C; */
+    opacity: 80%;
 }
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #7e3f20;
 }
 header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
 }
 
 header a{
@@ -65,10 +69,10 @@ header a:hover{
     width: 100px;
 }
 
-#home{ 
-    /* text-align: center; */
+/* #home{ 
+    text-align: center;
     padding-top: 40px;
-    height: 85vh;
+    height: 90vh;
     color: white;
     background-image: linear-gradient(
         0deg,
@@ -78,7 +82,7 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
+} */
 .titulo{
     font-size: 35px;
     text-align: center;
@@ -87,12 +91,13 @@ header a:hover{
     margin: 0;
     padding: 10px;
     padding-top: 3%;
+    text-shadow: 2px 2px 4px black;
 }
 .formulario{
     padding-top: 2%;
     padding-bottom: 2%;
     width: 340px;
-    height: 300px;
+    height: 500px;
     background: white;
     color: black;
     opacity: 50%;
@@ -146,18 +151,20 @@ header a:hover{
         background-image: url(img/LOGOS/logo\ negro.png);
         background-size: cover;
         background-position: center center;
-        height: 50px;
+        height: 40px;
         width: 100px;
     }
     header{
         position: fixed;
         width: 100%;
+        background-color: #84543C;
+        
     }
     header .container{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 25px;
+        padding: 10px;
     }
     header nav{
         flex-direction: row;
@@ -168,11 +175,13 @@ header a:hover{
     header nav:hover{
         color: #EDA46C;
     }
-    #espacio{
+
+
+    /* #espacio{
         padding: 3%;
-    }
-    #home{
-        padding: 0;
+    } */
+    .home{
+        padding: 10%;
         height: 90vh;
     }
     .container{
@@ -188,10 +197,11 @@ header a:hover{
         padding-bottom: 5%;
     }
     .formulario{
-        width: 750px;
-        height: 290px;
+        width: 80%;
+        height: 70%;
         display: flex;
         justify-content:space-around;
+        border-radius: 10px;
     }
     button{
         font-size: 30px;

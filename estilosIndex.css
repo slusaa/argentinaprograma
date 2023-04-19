@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 body{
@@ -39,13 +40,14 @@ button:hover{
 }
 header{
     /* background-color: #7a300b; */
-    background-color: #84543C;
+    background-color: #7e3f20;
     opacity: 80%;
 }
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #7e3f20;
 }
 header nav{
     display: flex;
@@ -64,7 +66,7 @@ header a{
 header a:hover{
     color: #EDA46C;
 }
-#homeUno{
+.homeUno{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -72,7 +74,7 @@ header a:hover{
     padding-left: 50%;
     font-family: Mulish;
     flex-direction: column;
-    height: 85vh;
+    height: 100vh;
     color: #000000;
     background-image:url(img/INVERTIDA.png);
     background-repeat: no-repeat;
@@ -87,42 +89,50 @@ header a:hover{
     background-repeat: no-repeat;
 }
 
-#homeDos{
+.homeDos{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
     background-color: #FBEADD;
-    padding: 0 10px;
+    /* padding: 0 62.5%; */
 }
-#explora{
+/* .homeDos img{
+    width: 60%;
+    height: 60%;
+} */
+.imgHomeDos{
+    display: flex;
+    justify-content: center;
+}
+.explora{
     font-family: Mulish;
-    font-size: 70px;
+    font-size: 300%;
     font-weight: bold;
     color: #84543C;
     margin-top: 2px;
     margin-bottom: -5px;
     padding: 0;
 }
-#caminos{
+.caminos{
     font-family: Mulish;
-    font-size: 30px;
+    font-size: 200%;
     font-weight: bold;
     color: #84543C;
     margin-top: 0;
     margin-bottom: 0;
 }
-#empresa{
+.empresa{
     font-family: 'Noto Serif Display', serif;
-    font-size: 20px;
+    font-size: 120%;
     font-weight: bold;
     color: #84543C;
     margin-top: 0;
     margin-bottom: 0;
 }
-#subir{
+.subir{
     font-family: Mulish;
-    font-size: 27px;
+    font-size: 180%;
     font-weight: bold;
     text-align: right;
     color: #EBA36D;
@@ -136,16 +146,6 @@ header a:hover{
     margin-bottom: 5px;
 }
 
-/* #homeTres{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    background-image: url(img/HOME3_A.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-} */
 #homeCuatro{
     display: flex;
     align-items: center;
@@ -157,14 +157,15 @@ footer{
     background-color: #EBA36D; 
     font-family: Gidugu;
     color: black;
-    padding-top: 5%;
-    padding-bottom: 17%;
-
+    /* padding-top: 5%;
+    padding-bottom: 17%; */
 }
 
 footer .container{
     display: flex;
     padding: 0 20px;
+    background-color: #EBA36D; 
+    justify-content: center;
     
 }
 footer nav a{
@@ -181,6 +182,13 @@ footer a:hover{
 }
 
 @media(min-width:720px){
+    .logo{
+        background-image: url(img/LOGOS/logo\ negro.png);
+        background-size: cover;
+        background-position: center center;
+        height: 40px;
+        width: 100px;
+    }
     header{
         position: fixed;
         width: 100%;
@@ -215,32 +223,38 @@ footer a:hover{
         width: 700px;
         height: 400px;
     } */
-    #homeDos{
+    .homeDos{
         padding: 0;
+        height: 85vh;
     }
-    #homeDos .container{
+    .homeDos .container{
         display: flex;
-        padding: 40px 0px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    #homeDos .textoHomeDos{
-        width: 40%;
+    .homeDos .textoHomeDos{
+        width: 60%;
+        padding-left: 5%;
+        padding-right: 2%;
         
     }
-    #explora{
-        font-size: 96px;
+    .homeDos .imgHomeDos{
+        width: 40%;
+        justify-content: flex-end;
     }
-    #caminos{
-        font-size: 40px;
+    .explora{
+        font-size: 300%;
     }
-    #empresa{
-        font-size: 24px;
+    .caminos{
+        font-size: 180%;
     }
-    #subir{
-        font-size: 36px;
+    .empresa{
+        font-size: 130%;
+    }
+    .subir{
+        font-size: 220%s;
     }
     
-    #homeDos .img-container{
+    /* .homeDos .img-container{
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.3),
@@ -251,11 +265,11 @@ footer a:hover{
         height: 600px;
         width: 600px;
         padding-right: 0px;
-    }
-    #homeDos .imgHomeDos{
+    } */
+    /* .homeDos .imgHomeDos{
         padding: 0;
         width: 40%;
-    }
+    } */
     #homeTres{
        display: flex;
         
