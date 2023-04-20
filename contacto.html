@@ -11,10 +11,12 @@
     <title>Contactate con nosotros</title>
 </head>
 <body>
-   <header> 
+    <header> 
         <div class="container">
             <div>
-                <a href=""><img src="./img/LOGOS/logo 34312F.png" alt="" width="13%" height="13%"></a>
+                <a href="index.html">
+                    <p class="logo"></p>
+                </a>
             </div>
             <div class="container">
                 <nav>
@@ -23,9 +25,9 @@
                     <a href="quienesSomos.html">QUIENES SOMOS</a>
                 </nav>
                 <div>
-                    <a href=""><img src="img/ICONOS/instagram.png" alt="" width="24" height="24"></a>
-                    <a href=""><img src="img/ICONOS/carrito-de-compras.png" alt="" width="24" height="24"></a>
-                    <a href=""><img src="img/ICONOS/lupa.png" alt="" width="24" height="24"></a>
+                    <a href="https://instagram.com/bicicletasvauban?igshid=YmMyMTA2M2Y="><img src="img/ICONOS/instagram.png" alt="" width="24" height="24"></a>
+                    <!-- <a href=""><img src="img/ICONOS/carrito-de-compras.png" alt="" width="24" height="24"></a>
+                    <a href=""><img src="img/ICONOS/lupa.png" alt="" width="24" height="24"></a> -->
                 </div>
             </div>
         </div>
@@ -35,19 +37,19 @@
     <section class="home">
             <div class="container">
                 <p class="titulo">CONTACTANOS</p>
-                <section class="formulario">
+                <form name="custom_form" class="formulario" onsubmit="return validForm()" >
                     <div class="divUno">
-                        <input class="controls" type="text" name="nombre" id="nombre" placeholder="NOMBRE Y APELLIDO">
-                        <span id="errorName">Ingrese un nombre y apellido.</span>
+                        <input class="controls" type="text" name="name" id="nombre" placeholder="NOMBRE Y APELLIDO">
+                        <span class="error">Ingrese un nombre y apellido.</span>
 
                         <input class="controls" type="email" name="correo" id="correo" placeholder="EMAIL">
-                        <span id="errorEmail">El e-mail es necesario.</span>
+                        <span class="error">El e-mail es necesario.</span>
 
                         <input class="controls" type="number" name="telefono" id="telefono" placeholder="TELEFONO">
-                        <span id="errorTel">Ingrese un numero de telefono.</span>
+                        <span class="error">Ingrese un numero de telefono.</span>
 
                         <input class="controls" type="text" name="localidad" id="localidad" placeholder="LOCALIDAD">
-                        <span id="errorLoc">Este campo es requerido.</span>
+                        <span class="error">Este campo es requerido.</span>
 
                         <select class="seleccionador" name="interesado" id="interesado">
                             <option class="seleccionador" value="">INTERESADO EN: </option>
@@ -60,11 +62,10 @@
                         <textarea class="caja" name="mensaje" id="mensaje" cols="30" rows="5" placeholder="MENSAJE"></textarea>
                         <div class="btnEnviar" >
                             <!-- Aca va el enlace para descargar la info en pdf -->
-                            <a><button id="btn-form">Enviar</button></a>
+                            <input class="btnEnviar" type="submit" value="Enviar"></input>
                         </div>
-                    </div>
-                    
-                </section>
+                    </div> 
+                </form>
                 <div class="btnInicio" >
                     <a href="index.html"><button>INICIO</button></a>
                 </div>
@@ -74,42 +75,8 @@
         src="https://code.jquery.com/jquery-3.6.4.js"
     	integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
         crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./sweetAler.js"></script>
     <script src="contacto.js"></script>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="imgFoot">
-                <p class="imgFooter"></p>
-            </div>
-            <div class="navFooter">
-                <div>
-                    <nav>
-                        <a><strong>NAVEGACIÓN</strong></a>
-                        <a href="#homeUno">HOME</a>
-                        <a href="quienesSomos.html">QUIENES SOMOS</a>
-                        <a href="productos.html">PRODUCTOS</a>
-                        <a href="">CARRITO</a>
-                    </nav>
-                </div>
-                <div>
-                    <nav>
-                        <a><strong>CONTACTANOS</strong>
-                        </a>
-                        <a href="mailto:bicicletasbauvan@gmail.com">BICIBLETASBAUVAN@GMAIL.COM</a>
-                        <a>+54 XX XXXX XXXX</a>
-                        <a>RAFAELA, SANTA FE, ARGENTINA.</a>
-                    </nav>
-                </div>
-                <div>
-                    <nav>
-                        <a><strong>SEGUINOS</strong></a>
-                        <a href=""><img src="img/ICONOS/instagram.png" alt="" width="30" height="30" /></a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
 </body>
 </html>

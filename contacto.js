@@ -1,63 +1,49 @@
+function validForm(){
 
-$(document).ready(() =>{
-         $('#errorName').hide();
-         $('#btn-form').click(function(){
-
-            let nombre = $('#nombre').val();
-            
-                    if (nombre.length < 3){
-                            $('#errorName').show();
-                            return;
-            }else{
-                    $('#errorName').hide();
-                                                    }
-
-             });
-
-    
-        $('#errorEmail').hide();
-        $('#btn-form').click(function(){
-
-            let email = $('#correo').val();
-                    
-                    if(email.length < 3){
-                            $('#errorEmail').show();
-                            return;
-                    }else{
-                            $('#errorEmail').hide();
-                                                    }
-            });
-
-    
-        $('#errorTel').hide();
-        $('#btn-form').click(function(){
-    
-                    let telefono = $('#telefono').val();
-                            
-                            if(telefono.length < 1){
-                                    $('#errorTel').show();
-                                    return;
-                            }else{ 
-                                    $('#errorTel').hide();
-                                                            }
-                    });       
+        //alert('Esta funcionando el submit')
+        let nombre = document.custom_form.name;
+                if( nombre.value == ""){
+                nombre.nextElementSibling.style.display = 'block';
+                nombre.style.border = '2px solid #f00';
+                      return false;
+                }else{
+                        nombre.nextElementSibling.style.display = 'none';
+                        nombre.style.border = '2px transparent #f00';   
+                }
+        
+        let email = document.custom_form.correo;
+            if( email.value == ""){
+                email.nextElementSibling.style.display = 'block';
+                email.style.border = '2px solid #f00';
+                        return false;
+                }else{
+                        email.nextElementSibling.style.display = 'none';
+                        email.style.border = '2px transparent #f00';   
+                 }
 
 
-            
-            $('#errorLoc').hide();
-            $('#btn-form').click(function(){
-    
-                    let localidad = $('#localidad').val();
-                            
-                            if(localidad.length < 3){
-                                    $('#errorLoc').show();
-                                    return;
-                            }else{
-                                    $('#errorLoc').hide();
-                                                            }
-                        });                                    
+                 let celphone = document.custom_form.telefono;
+                 if( celphone.value == ""){
+                         celphone.nextElementSibling.style.display = 'block';
+                         celphone.style.border = '2px solid #f00';
+                                return false;
+                        }else{
+                                celphone.nextElementSibling.style.display = 'none';
+                                celphone.style.border = '2px transparent #f00';  
+                        }         
 
-                    });
+                        let location = document.custom_form.localidad;
+                           if( location.value == ""){
+                               location.nextElementSibling.style.display = 'block';
+                               location.style.border = '2px solid #f00';
+                                       return false;
+                               }else{
+                                       location.nextElementSibling.style.display = 'none';
+                                       location.style.border = '2px transparent #f00';  
+                               }
+                               
+                                        alert('Todos los datos se cargaron correctamente , nos estaremos comunicando con usted en la brevedad. ¡Gracias por elegirnos!')
+                               }
                     
                    
             
