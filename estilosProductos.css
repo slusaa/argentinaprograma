@@ -1,5 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: system-ui;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul{ list-style: none;}
+button{
+    font-size: 1.5em;
+    padding: 0 25px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #84543C; 
+    font-family: Gidugu;
 }
 header{
     background-color:#EDA46C;
@@ -187,6 +206,36 @@ p.author a {
     color: #000;
 }
 
+/*Footer*/
+
+footer{
+    background-color: #EBA36D; 
+    font-family: Gidugu;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer .container{
+    display: flex;
+    padding: 0 20px;
+    background-color: #EBA36D; 
+    justify-content: center;
+    
+}
+footer nav a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color: #84543C;
+}
+
 @media(min-width:410px){
     .logo{
         background-image: url(img/LOGOS/logo\ negro.png);
@@ -198,12 +247,13 @@ p.author a {
     header{
         position: fixed;
         width: 100%;
+        background-color: #84543C;
     }
     header .container{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 25px;
+        padding: 0 10px;
     }
     header nav{
         flex-direction: row;
@@ -222,6 +272,49 @@ p.author a {
     .nombre{
         font-size: 16px;
     }
-    
+
+    footer{
+        display: flex;
+        justify-content: center;
+        background-color: #EBA36D; 
+        font-family: Gidugu;
+        color: black;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        background-color: #EDA46C;
+        
+    }
+    footer .navFooter{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+
+    }
+    footer .imgFoot{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    footer .imgFooter{
+        background-image: url(img/LOGOS/VAUBAN\ CHAPITA.png);
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 200px;
+    }
+    .iconoinsta{
+        justify-content: center;
+        align-items: center;
+    }
 }
 

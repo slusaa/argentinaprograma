@@ -162,6 +162,36 @@ header a:hover{
     justify-content: center;
 }
 
+/*Footer*/
+
+footer{
+    background-color: #EBA36D; 
+    font-family: Gidugu;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer .container{
+    display: flex;
+    padding: 0 20px;
+    background-color: #EBA36D; 
+    justify-content: center;
+    
+}
+footer nav a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color: #84543C;
+}
+
 @media(min-width:720px){
     .logo{
         background-image: url(img/LOGOS/logo\ negro.png);
