@@ -21,31 +21,35 @@ button{
     font-family: Gidugu;
 }
 header{
-    background-color:#EDA46C;
     padding-top: 18px;
     padding-bottom: 18px;
-    box-shadow: 0 7px 8px -3px grey;
     position: fixed;
     width: 100%;
-    margin-top: -10px;
+    margin-top: 10px;
     z-index: 99;
+    background-color: #7e3f20;
     opacity: 80%;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 .container{
     max-width: 1200px;
     text-align: center;
-    margin: auto;
+    margin: auto; 
+    padding-bottom: 10%; 
 }
+
 .header-section{
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 0.5%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     align-items: center;
     position: relative;
 }
-.header-section div{
-    position: relative;
-}
+
+
 .header-section p{
     position: absolute;
     top: -24px;
@@ -59,16 +63,14 @@ header{
     line-height: 18px;
 }
 
+.logo{
+    padding-left: 1%;
+}
+
 .iconos{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.logo{
-    width: 164px;
-    height: 84px;
-    cursor: pointer;
 }
 
 .cart{
@@ -92,12 +94,16 @@ header{
     transition-duration: .5s;
 }
 /*end header*/
+
 .products{
-    padding-top: 170px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 .carts{
@@ -272,6 +278,11 @@ footer a:hover{
     .nombre{
         font-size: 16px;
     }
+
+    .products{
+    grid-template-columns: repeat(3, 1fr);
+}
+    
 
     footer{
         display: flex;
