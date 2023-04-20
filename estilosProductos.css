@@ -1,9 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body{
     font-family: system-ui;
 }
@@ -193,36 +187,6 @@ p.author a {
     color: #000;
 }
 
-/*Footer*/
-
-footer{
-    background-color: #EBA36D; 
-    font-family: Gidugu;
-    color: black;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-footer .container{
-    display: flex;
-    padding: 0 20px;
-    background-color: #EBA36D; 
-    justify-content: center;
-    
-}
-footer nav a{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-}
-footer a{
-    text-decoration: none;
-}
-footer a:hover{
-    color: #84543C;
-}
-
 @media(min-width:410px){
     .logo{
         background-image: url(img/LOGOS/logo\ negro.png);
@@ -257,41 +221,6 @@ footer a:hover{
     }
     .nombre{
         font-size: 16px;
-    }
-
-    footer{
-        justify-content: center;
-        align-items: center;
-    }
-    footer .container{
-        display: flex;
-        flex-direction: row;
-        background-color: #EDA46C;
-        
-    }
-    footer .navFooter{
-        width: 60%;
-        display: flex;
-        justify-content: space-around;
-        font-size: 18px;
-
-    }
-    footer .imgFoot{
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    footer .imgFooter{
-        background-image: url(img/LOGOS/VAUBAN\ CHAPITA.png);
-        background-size: cover;
-        background-position: center center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 200px;
     }
     
 }
