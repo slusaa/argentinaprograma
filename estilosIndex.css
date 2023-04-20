@@ -1,11 +1,18 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body{
-    margin: 0;
+    background-image: url(img/CONTACTO.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+/*Header*/
 ul{ list-style: none;}
 button{
     font-size: 1.5em;
@@ -37,9 +44,13 @@ button:hover{
 .container{
     max-width: 1400px;
     margin: auto;
+    padding-bottom: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 header{
-    /* background-color: #7a300b; */
     background-color: #7e3f20;
     opacity: 80%;
 }
@@ -49,11 +60,15 @@ header .container{
     align-items: center;
     background-color: #7e3f20;
 }
+
+.logo{
+    padding-left: 1%;
+}
+
 header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
 }
 
 header a{
@@ -153,12 +168,15 @@ header a:hover{
     background-color: #84543C;
     text-align: center;
 }
+
+/*Footer*/
+
 footer{
     background-color: #EBA36D; 
     font-family: Gidugu;
     color: black;
-    /* padding-top: 5%;
-    padding-bottom: 17%; */
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 footer .container{
@@ -192,10 +210,11 @@ footer a:hover{
     header{
         position: fixed;
         width: 100%;
+        background-color: #84543C;
     }
     header .container{
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
@@ -293,7 +312,13 @@ footer a:hover{
     }
 
     footer{
-        
+        display: flex;
+        justify-content: center;
+        background-color: #EBA36D; 
+        font-family: Gidugu;
+        color: black;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
     footer .container{
         display: flex;
@@ -325,4 +350,10 @@ footer a:hover{
         height: 100px;
         width: 200px;
     }
+
+    .iconoinsta{
+        justify-content: center;
+        align-items: center;
+    }
+
 }
